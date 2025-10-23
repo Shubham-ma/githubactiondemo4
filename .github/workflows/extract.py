@@ -1,0 +1,1 @@
+print("Extrct data from mysql")
