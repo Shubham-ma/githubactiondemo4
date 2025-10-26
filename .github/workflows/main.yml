@@ -3,7 +3,7 @@ name: ETL Pipeline demo
 on:
   push:
    branches:
-     -main
+   - main
 
 jobs:
   extract-data:
