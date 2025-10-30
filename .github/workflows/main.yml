@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run extract.py
-        run: python scripts/extract.py
+        run: python .github/workflows/extract.py
 
   transform-data:
     runs-on: ubuntu-latest
@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run transform.py
-        run: python scripts/transform.py
+        run: python .github/workflows/transform.py
 
   load-data:
     runs-on: ubuntu-latest
@@ -33,4 +33,4 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run load.py
-        run: python scripts/load.py
+        run: python .github/workflows/load.py
