@@ -21,6 +21,9 @@ jobs:
       - name: show python version
         run: python --version
 
+      - name: Install required dependecies
+        run: pip Install pandas
+
       - name: Run extract.py
         run: python .github/workflows/extract.py
 
